@@ -13,7 +13,12 @@ gif = Gif(
     n_repeat_last_frame=3,
 )
 gif.set_labels(
-    ["print", "hello", "world"], font_size=60, padding=20, loc="bottom right"
+    ["print", "hello", "world"],
+    font_size=60,
+    loc="top left",
+    text_padding=40,
+    box_padding=20,
+    shadow_offset=15,
 )
 gif.set_background_color("red")
 gif.set_size((900, 700), scale=1)
